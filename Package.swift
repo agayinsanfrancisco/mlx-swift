@@ -93,6 +93,8 @@ import PackageDescription
         .define("_METAL_"),
         .define("SWIFTPM_BUNDLE", to: "\"mlx-swift_Cmlx\""),
         .define("METAL_PATH", to: "\"default.metallib\""),
+
+        .unsafeFlags(["-std=c++17"]),
     ]
 
     let linkerSettings: [LinkerSetting] = [
